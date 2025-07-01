@@ -29,7 +29,7 @@ st.markdown(
     f"<h1 style='text-align: center; color: {COLOR_PRIMARY};'>🐾 VetoCheck</h1>",
     unsafe_allow_html=True
 )
-st.image("vetocheck_logo.png", width=180)
+st.image("vetocheck_logo.png",text-align: center, width=180)
 st.markdown(
     f"<p style='text-align: center; color: {COLOR_TEXT};'>Diagnostic Préventif Animal — Licensing Maxi Zoo</p>",
     unsafe_allow_html=True
