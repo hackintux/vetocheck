@@ -1,0 +1,29 @@
+[
+  {
+    "animal": "chien",
+    "tags": ["pelage"],
+    "level": "Vert",
+    "produit": {
+      "nom": "Shampoing douceur pelage",
+      "lien": "https://www.maxizoo.fr/chien-shampooing"
+    }
+  },
+  {
+    "animal": "chien",
+    "tags": ["parasites"],
+    "level": "Orange",
+    "produit": {
+      "nom": "Collier anti-puces et tiques",
+      "lien": "https://www.maxizoo.fr/chien-antipuces"
+    }
+  },
+  {
+    "animal": "chat",
+    "tags": ["comportement"],
+    "level": "Vert",
+    "produit": {
+      "nom": "Diffuseur apaisant chat",
+      "lien": "https://www.maxizoo.fr/chat-diffuseur"
+    }
+  }
+]
