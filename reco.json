@@ -1,101 +1,112 @@
-[
-  {
-    "animal": "chien",
-    "tags": ["digestion"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Croquettes digestion facile",
-      "lien": "https://www.maxizoo.fr/chien-croquettes-digestion"
+{
+  "chien": {
+    "digestion": {
+      "Vert": [
+        {
+          "nom": "Croquettes digestion facile",
+          "lien": "https://www.maxizoo.fr/chien-croquettes-digestion"
+        }
+      ],
+      "Orange": [
+        {
+          "nom": "Complément digestion",
+          "lien": "https://www.maxizoo.fr/chien-complement-digestion"
+        }
+      ]
+    },
+    "parasites": {
+      "Vert": [
+        {
+          "nom": "Pipette anti-puces",
+          "lien": "https://www.maxizoo.fr/chien-pipette"
+        }
+      ],
+      "Orange": [
+        {
+          "nom": "Collier anti-puces et tiques",
+          "lien": "https://www.maxizoo.fr/chien-collier"
+        }
+      ]
+    },
+    "pelage": {
+      "Vert": [
+        {
+          "nom": "Shampoing pelage brillant",
+          "lien": "https://www.maxizoo.fr/chien-shampoing"
+        }
+      ]
+    },
+    "dents": {
+      "Vert": [
+        {
+          "nom": "Friandises dentaires",
+          "lien": "https://www.maxizoo.fr/chien-friandises-dentaires"
+        }
+      ]
+    },
+    "yeux": {
+      "Vert": [
+        {
+          "nom": "Lingettes nettoyantes yeux",
+          "lien": "https://www.maxizoo.fr/chien-lingettes-yeux"
+        }
+      ]
+    },
+    "oreilles": {
+      "Vert": [
+        {
+          "nom": "Lotion auriculaire",
+          "lien": "https://www.maxizoo.fr/chien-lotion-oreilles"
+        }
+      ]
     }
   },
-  {
-    "animal": "chien",
-    "tags": ["parasites"],
-    "level": "Orange",
-    "produit": {
-      "nom": "Collier anti-puces et tiques",
-      "lien": "https://www.maxizoo.fr/chien-antipuces"
-    }
-  },
-  {
-    "animal": "chien",
-    "tags": ["pelage"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Shampoing douceur pelage",
-      "lien": "https://www.maxizoo.fr/chien-shampooing"
-    }
-  },
-  {
-    "animal": "chien",
-    "tags": ["dents"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Friandises dentaires",
-      "lien": "https://www.maxizoo.fr/chien-hygiene-buccale"
-    }
-  },
-  {
-    "animal": "chien",
-    "tags": ["yeux"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Lingettes nettoyantes yeux",
-      "lien": "https://www.maxizoo.fr/chien-lingettes-yeux"
-    }
-  },
-  {
-    "animal": "chien",
-    "tags": ["oreilles"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Lotion auriculaire",
-      "lien": "https://www.maxizoo.fr/chien-nettoyage-oreilles"
-    }
-  },
-  {
-    "animal": "chat",
-    "tags": ["pelage"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Brosse douce pour chat",
-      "lien": "https://www.maxizoo.fr/chat-brosse-pelage"
-    }
-  },
-  {
-    "animal": "chat",
-    "tags": ["parasites"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Pipette anti-puces chat",
-      "lien": "https://www.maxizoo.fr/chat-pipette-puces"
-    }
-  },
-  {
-    "animal": "chat",
-    "tags": ["yeux"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Lingettes nettoyantes yeux chat",
-      "lien": "https://www.maxizoo.fr/chat-lingettes-yeux"
-    }
-  },
-  {
-    "animal": "chat",
-    "tags": ["oreilles"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Lotion auriculaire pour chat",
-      "lien": "https://www.maxizoo.fr/chat-nettoyage-oreilles"
-    }
-  },
-  {
-    "animal": "chat",
-    "tags": ["comportement"],
-    "level": "Vert",
-    "produit": {
-      "nom": "Diffuseur apaisant pour chat",
-      "lien": "https://www.maxizoo.fr/chat-diffuseur-apaisant"
+  "chat": {
+    "pelage": {
+      "Vert": [
+        {
+          "nom": "Brosse douce chat",
+          "lien": "https://www.maxizoo.fr/chat-brosse"
+        }
+      ]
+    },
+    "parasites": {
+      "Vert": [
+        {
+          "nom": "Pipette anti-puces chat",
+          "lien": "https://www.maxizoo.fr/chat-pipette"
+        }
+      ],
+      "Orange": [
+        {
+          "nom": "Collier anti-puces chat",
+          "lien": "https://www.maxizoo.fr/chat-collier"
+        }
+      ]
+    },
+    "yeux": {
+      "Vert": [
+        {
+          "nom": "Lingettes nettoyantes yeux chat",
+          "lien": "https://www.maxizoo.fr/chat-lingettes-yeux"
+        }
+      ]
+    },
+    "oreilles": {
+      "Vert": [
+        {
+          "nom": "Lotion auriculaire chat",
+          "lien": "https://www.maxizoo.fr/chat-lotion-oreilles"
+        }
+      ]
+    },
+    "comportement": {
+      "Vert": [
+        {
+          "nom": "Diffuseur apaisant",
+          "lien": "https://www.maxizoo.fr/chat-diffuseur-apaisant"
+        }
+      ]
     }
   }
-]
+}
