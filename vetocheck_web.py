@@ -25,11 +25,6 @@ def load_reco():
 RECO = load_reco()
 
 # === TITRE & LOGO ===
-st.markdown(
-    f"<h1 style='text-align: center; color: {COLOR_PRIMARY};'>🐾 VetoCheck</h1>",
-    unsafe_allow_html=True
-)
-
 import base64
 
 # Lire ton fichier logo et le convertir en base64
