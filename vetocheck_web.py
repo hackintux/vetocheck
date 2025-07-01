@@ -30,14 +30,26 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+import base64
+
+# Lire ton fichier logo et le convertir en base64
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+img = get_img_as_base64("vetocheck_logo.png")
+
+# Afficher centré
 st.markdown(
-    """
+    f"""
     <div style="text-align: center;">
-        <img src='vetocheck_logo.png' width='180'>
+        <img src="data:image/png;base64,{img}" width="200">
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 st.markdown(
     f"<p style='text-align: center; color: {COLOR_TEXT};'>Diagnostic Préventif Animal — Licensing Maxi Zoo</p>",
