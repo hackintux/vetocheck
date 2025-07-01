@@ -31,9 +31,11 @@ st.markdown(
 )
 
 st.markdown(
+    """
     <div style="text-align: center;">
         <img src='vetocheck_logo.png' width='180'>
-    </div>,
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
