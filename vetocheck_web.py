@@ -104,9 +104,10 @@ for tag, question in questions:
         total_score += 2
 
 # === DIAGNOSTIC ===
-if st.button("✅ Voir le diagnostic"):
+if st.button("✅ Voir le diagnostic complet"):
     st.header("🎯 Résultat")
 
+    # Niveau de risque
     if total_score <= 4:
         level = "Vert"
         st.success("🟢 Aucun signe inquiétant — surveillance normale.")
@@ -117,30 +118,35 @@ if st.button("✅ Voir le diagnostic"):
         level = "Rouge"
         st.error("🔴 Risque élevé — consultez un vétérinaire dès que possible !")
 
-    # Message stérilisation
+    # Vérifie stérilisation
     if (age_unit == "ans" and age >= 1) or (age_unit == "mois" and age > 6):
         if steril == "Non":
             st.warning(f"⚠️ Penser à stériliser {animal_name}")
 
-    # Alerte 3115
+    # Alerte urgence 3115
     if level == "Rouge":
-        st.error("⚠️ Contactez le **3115** (numéro gratuit) pour urgence vétérinaire.")
+        st.error("⚠️ En cas d'urgence, appelez le **3115** (numéro gratuit) pour contacter un vétérinaire de garde.")
 
-    # Recommandations
-    st.subheader("📦 Recommandations Maxi Zoo")
-    active_tags = list(tags_score.keys())
-    recos = []
-    for cat, prod in RECO.get(animal_type.lower(), {}).items():
-        if cat in active_tags and level in prod:
-            recos.extend(prod[level])
-
-    if recos:
-        for p in recos:
-            st.markdown(f"- [{p['nom']}]({p['lien']})")
+    # Vérifie animal_type défini
+    if not animal_type:
+        st.error("⚠️ Veuillez choisir Chien ou Chat avant de voir les recommandations.")
     else:
-        st.info("RAS ou consultez votre vétérinaire.")
+        # Recommandations basées sur RECO (dict imbriqué)
+        st.subheader("📦 Recommandations Maxi Zoo")
+        active_tags = list(tags_score.keys())
+        recos = []
 
-    # Historique
+        for cat, prod in RECO.get(animal_type.lower(), {}).items():
+            if cat in active_tags and level in prod:
+                recos.extend(prod[level])
+
+        if recos:
+            for p in recos:
+                st.markdown(f"- [{p['nom']}]({p['lien']})")
+        else:
+            st.info("Aucun produit spécifique pour le moment — surveillez l'état de votre animal ou consultez un vétérinaire.")
+
+    # Historique simple
     st.caption(f"🗂️ Diagnostic sauvegardé le {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 # === FOOTER ===
