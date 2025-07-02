@@ -77,7 +77,7 @@ st.markdown("---")
 
 # === CHOIX CHIEN / CHAT ===
 st.subheader("🐶 / 🐱 / 🐰  Quel animal souhaitez-vous diagnostiquer ?")
-animal_type = st.radio("Type d'animal :", ["Chien", "Chat", "Lapin"], horizontal=True)
+animal_type = st.radio("Type d'animal :", ["Chien", "Chat", "Lapin (en cours de développement)"], horizontal=True)
 
 # === QUESTIONS ===
 if animal_type:
